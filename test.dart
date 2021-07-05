@@ -2,6 +2,8 @@ import 'dart:io';
 
 void main(){
 
+  // First task - Calculator of 2 numbers -> operations + - * /
+
   stdout.write('Enter first number: ');
   var num1 = stdin.readLineSync();
   var firstNum = int.tryParse(num1 ?? '');
@@ -31,7 +33,7 @@ void main(){
     print('First number - second number = $firstNum - $secondNum');
   } else if(operation == '*'){
     print('First number * second number = $firstNum * $secondNum');
-  } else if(operation == '/'){
+  } else  if(operation == '/'){
     print('First number / second number = $firstNum/$secondNum ');
   }
 }
