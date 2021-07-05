@@ -26,14 +26,19 @@ void main(){
   var operation = stdin.readLineSync();
   print('Operation is $operation');
 
-  if(operation == '+'){
-    print('First number + second number = ${firstNum + secondNum}');
-    // print(firstNum + secondNum);
-  } else if(operation == '-'){
-    print('First number - second number = ${firstNum - secondNum}');
-  } else if(operation == '*'){
-    print('First number * second number = ${firstNum * secondNum}');
-  } else  if(operation == '/'){
-    print('First number / second number = ${firstNum / secondNum}');
+  switch(operation){
+    case '+':
+      print('First number + second number = ${firstNum + secondNum}');
+      break;
+    case '-':
+      print('First number - second number = ${firstNum - secondNum}');
+      break;
+    case '*':
+      print('First number * second number = ${firstNum * secondNum}');
+      break;
+    case '/':
+      print('First number / second number = ${firstNum / secondNum}');
+      break;
+
   }
 }
