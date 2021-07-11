@@ -11,7 +11,7 @@ void main(List<String> arguments) {
 
     switch (op){
       case '1':
-        print('Enter Student data as "ID Name Address Phone"');
+        print('Enter Student data as "ID Name Age Address Email Phone"');
         var data = stdin.readLineSync()!.split(' ');
         std.addStudent(
             id : data[0],
@@ -43,9 +43,10 @@ void main(List<String> arguments) {
 
 
 //problems
-// 1- required error
-// 2- late error
-// 3- super error + not clear
-// 4- add to map - addSubject(String id, String subject, double grade)
-// 5- calculateStudentGrade(String id);
-// 6-> check if specific student pass the subject or not ⇒ if grade greater than 50 pass else fail then print all subjects
+
+
+//- Print overided function
+//- add map to list std to
+//             add to map - addSubject(String id, String subject, double grade)
+//- calculateStudentGrade(String id);
+//-check if specific student pass the subject or not ⇒ if grade greater than 50 pass else fail then print all subjects

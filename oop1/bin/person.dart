@@ -5,7 +5,7 @@ class Person{
   var address;
 
   //Constructor
-  Person(this.id , this.name , this.age , this.address){}
+  Person({required this.id ,required this.name ,required this.age ,required this.address});
 
   void personData(){
     print('ID = $id \n Name = $name \n Age = $age \n Address = $address ');

@@ -2,30 +2,32 @@ import './person.dart';
 
 class Student extends Person{
 
-  var email;
-  var phone;
+   var email;
+   var phone;
   Map<String, double> subjectsMap = {};
 
   Student(
-  {  var id ,
-     var name ,
-     var age,
-     var address,
-     this.email ,
-     this.phone })
+  { required var id ,
+    required var name ,
+    required var age,
+    required var address,
+    required this.email ,
+    required this.phone })
       :super(
         id: id,
         name: name,
         age : age,
         address : address,
-        email : email,
-        phone : phone,
       );
 
   @override
   void personData() {
     print('email = $email \n phone = $phone \n Results = $subjectsMap');
     super.personData();
+  }
+
+  void addSubject(var subject , var grade){
+    subjectsMap.addAll({'$subject': grade});
   }
 
 }
@@ -40,7 +42,8 @@ class Students {
       var age,
       var address,
       var email,
-      var phone
+      var phone,
+  var subjectsMap,
   }){
     std.add(Student(
       id: id,
@@ -48,7 +51,7 @@ class Students {
       age : age,
       address : address,
       email : email,
-      phone : phone,
+      phone : phone
     ));
   }
 
@@ -60,6 +63,7 @@ class Students {
     std.forEach((student) {
       student.personData();
     });
+
   }
 
   // void addSubject(var id ,var subject , var grade){
@@ -67,5 +71,5 @@ class Students {
   //       subjectsMap.add(subject : grade);
   //   );
 
-  }
+  // }
 }
