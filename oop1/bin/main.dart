@@ -34,6 +34,17 @@ void main(List<String> arguments) {
         break;
       case '4':
         break Loop;
+      // case '5':
+      //   print('Enter Student Grades as "Subject Grade"');
+      //   var data = stdin.readLineSync()!.split(' ');
+        // std.addSubject(
+        //     // id : data[0],
+        //     // name: data[1],
+        //     // age: data[2],
+        //     // address: data[3],
+        //     // email: data[4],
+        //     // phone: data[5]
+        // );
     }
   }
 }

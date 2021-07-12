@@ -2,8 +2,8 @@ import './person.dart';
 
 class Student extends Person{
 
-   var email;
-   var phone;
+  var email;
+  var phone;
   Map<String, double> subjectsMap = {};
 
   Student(
@@ -27,14 +27,14 @@ class Student extends Person{
   }
 
   void addSubject(var subject , var grade){
-    subjectsMap.addAll({'$subject': grade});
+    subjectsMap[subject] = grade;
   }
 
 }
 
 class Students {
 
-  List <Student> std= [];
+  List<Student> std= [];
 
   void addStudent({
       var id ,
@@ -43,7 +43,6 @@ class Students {
       var address,
       var email,
       var phone,
-  var subjectsMap,
   }){
     std.add(Student(
       id: id,
@@ -63,8 +62,13 @@ class Students {
     std.forEach((student) {
       student.personData();
     });
-
   }
+
+  // void addSub(var id){
+  //   std.forEach((student) {
+  //     student.addSubject();
+  //   });
+  // }
 
   // void addSubject(var id ,var subject , var grade){
   //   std.forEach((id)
